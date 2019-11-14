@@ -17,9 +17,11 @@ int main(int argc, char** argv)
         csv::io::FileReader reader(args.inputFileName);
         csv::io::FileWriter writer(args.outputFileName);
 
-        while (true) {
+        while (true)
+        {
             std::string inputLine = reader.readLine();
-            if (reader.eof()) {
+            if (reader.eof())
+            {
                 break;
             }
 

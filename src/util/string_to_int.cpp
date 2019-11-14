@@ -20,7 +20,8 @@ int stringToInt(const std::string& str)
         throw std::runtime_error("Invalid integer: " + str);
     }
 
-    if (index != str.size()) {
+    if (index != str.size())
+    {
         throw std::runtime_error("Invalid integer: " + str);
     }
     return converted;

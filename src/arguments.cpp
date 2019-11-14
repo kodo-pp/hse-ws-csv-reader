@@ -10,7 +10,8 @@ namespace csv::args
 
 ParsedArguments parseArguments(int argc, const char** argv)
 {
-    if (argc < 3) {
+    if (argc < 3)
+    {
         std::cerr << "Usage: csv-reader <input> <output>   <index> [<index> ...]" << std::endl;
         std::cerr << "Arguments:" << std::endl;
         std::cerr << "    <input>       - Input file name" << std::endl;
